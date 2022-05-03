@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 /*
  * @author: Nikhil Deshnukh
- * Ability to create the binary tree
+ * Ability to search 63 in the Binary Tree
  */
 public class MainBST {
 	public static void main(String[] args) {
@@ -21,9 +21,11 @@ public class MainBST {
 		tree.add(65);
 		tree.add(63);
 		tree.add(67);
-		tree.print();
 
+		tree.levelPrint();
 		int size = tree.getSize();
 		System.out.println(size);
+		tree.search(30);
+		tree.print();
 	}
 }
