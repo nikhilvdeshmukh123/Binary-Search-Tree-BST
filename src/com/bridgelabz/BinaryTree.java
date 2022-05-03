@@ -1,8 +1,5 @@
 package com.bridgelabz;
 
-import java.util.Stack;
-import org.w3c.dom.Node;
-
 public class BinaryTree<K extends Comparable<K>> {
 
 	private INode<K> root;
@@ -43,5 +40,11 @@ public class BinaryTree<K extends Comparable<K>> {
 			System.out.println(root.key);
 			printRec(root.right);
 		}
+	}
+
+	@Override
+	public String toString() {
+		return "BinaryTree [root=" + root + ", getSize()=" + getSize() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + ", toString()=" + super.toString() + "]";
 	}
 }
